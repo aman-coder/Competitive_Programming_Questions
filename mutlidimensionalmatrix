@@ -1,0 +1,27 @@
+#i have to create matrix in which I have to take the numb for the user that what would be the size of the matrix and also the input must be in the way that 
+#in first row of the matrix should have the value in which power must be the 1 and in second value the power for the whole row must of the power of 2
+#and so on as size of the matrix grows.
+
+import java.util.*;
+
+public class Main {
+    
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Please Enter the String");
+        int n=sc.nextInt();
+        int[][] arr=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0; j<n;j++){
+                arr[i][j]=sc.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0; j<n;j++){
+                System.out.print( (int)Math.pow(arr[i][j],i+1)+" ");
+            }
+            System.out.println("");
+        }
+        sc.close();
+    }
+}
