@@ -1,6 +1,6 @@
-#i have to create matrix in which I have to take the numb for the user that what would be the size of the matrix and also the input must be in the way that 
-#in first row of the matrix should have the value in which power must be the 1 and in second value the power for the whole row must of the power of 2
-#and so on as size of the matrix grows.
+-> i have to create matrix in which I have to take the numb for the user that what would be the size of the matrix and also the input must be in the way that 
+-> in first row of the matrix should have the value in which power must be the 1 and in second value the power for the whole row must of the power of 2
+-> and so on as size of the matrix grows.
 
 import java.util.*;
 
