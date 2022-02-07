@@ -8,17 +8,18 @@ public class Main {
     
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Please Enter the String");
+        System.out.println("Please Enter the Size of Matrix");
         int n=sc.nextInt();
         int[][] arr=new int[n][n];
         for(int i=0;i<n;i++){
             for(int j=0; j<n;j++){
-                arr[i][j]=sc.nextInt();
+                
+                 arr[i][j]=(int)Math.pow(i+2,j+1);
             }
         }
         for(int i=0;i<n;i++){
             for(int j=0; j<n;j++){
-                System.out.print( (int)Math.pow(arr[i][j],i+1)+" ");
+                System.out.print(arr[i][j]+" ");
             }
             System.out.println("");
         }
