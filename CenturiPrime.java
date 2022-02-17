@@ -25,7 +25,7 @@ public class Main{
                 if(contains(vowel,s)){
                     System.out.println("Case #"+t+": "+cityNames+" is ruled by "+"Alice.");
                     
-                }else if(s == 'y'){
+                }else if(s == 'y' || s=='Y'){
                      System.out.println("Case #"+t+": "+cityNames+" is ruled by "+"nobody.");
                 }else {
                      System.out.println("Case #"+t+": "+cityNames+" is ruled by " +"Bob.");
