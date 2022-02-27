@@ -4,7 +4,7 @@ import java.util.Random;
 public class Main
 {
     public static void quicksort(int[] arr,int lowindex,int highindex){
-        // base case for the recursion as single element of the array is already 
+        // base case for the recursion as single element of the array is already sorted
         if(lowindex >= highindex){
             return;
         }
@@ -19,11 +19,11 @@ public class Main
         int leftpointer = lowindex;
         int rightpointer = highindex;
         while(leftpointer<rightpointer){
-            // HERE we are checking the elements which are less then pivot to them in left side
+            // HERE we are checking the elements which are less then pivot to make them in left side
             while(arr[leftpointer]<=pivot && leftpointer<rightpointer ){
                 leftpointer++;
             }
-            // HERE we are checking the elements which are greater then pivot to them in right side
+            // HERE we are checking the elements which are greater then pivot to make them in right side
             while(arr[rightpointer]>=pivot && leftpointer<rightpointer ){
                 rightpointer--;
             }
@@ -32,7 +32,7 @@ public class Main
             // rightpointer pointing to lower number than pivot
             swapEl(arr,leftpointer,rightpointer);
         }
-        // and here we swapping the pivot to the leftpointer pointer to make it in right place
+        // and here we swapping the pivot to the lastindex of array leftpointer pointer to make it in right place
         // as at point of time both rightpointer and leftpointer will be pointing at the same element
         swapEl(arr,leftpointer,highindex);
         // Calling recursion for the left array
