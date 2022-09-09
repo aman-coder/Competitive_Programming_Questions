@@ -1,4 +1,10 @@
 #### Nth character in Decrypted String 
+-- Every Character in the String is followed by its frequency you have to decrypt and return the asked value
+-- input1: a1b2c3
+-- input2: 5
+-- Output: c
+
+```java
 import java.util.*;
 public class Main
 {
@@ -35,3 +41,4 @@ public class Main
 		System.out.println("The Requested Character is: "+charo(aa,n));
 	}
 }
+```
